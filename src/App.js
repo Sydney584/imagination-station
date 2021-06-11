@@ -1,13 +1,17 @@
 import './App.css';
+import Navbar from './Components/Navbar';
+import Home from './Components/Home';
 
-import NavBar from './Components/Navbar/Navbar';
 
 function App() {
+  const title = 'Welcome to Imagination Station';
+
   return (
     <div className="App">
-     <NavBar /> 
+      <h1>{ title }</h1>
+       <Navbar /> 
       <div className="content">
-        <p>Testing</p>
+        <Home />
       </div>
     </div>
   );
